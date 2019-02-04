@@ -1,0 +1,27 @@
+{
+  "name": "project-one",
+  "version": "1.0.0",
+  "description": "Capstone Project",
+  "main": "(src/server.js)",
+  "scripts": {
+    "test": "export NODE_ENV=test && jasmine",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toinhao1/project-one.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toinhao1/project-one/issues"
+  },
+  "homepage": "https://github.com/toinhao1/project-one#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jasmine": "^3.3.1",
+    "request": "^2.88.0"
+  }
+}
