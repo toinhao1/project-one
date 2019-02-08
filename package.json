@@ -5,7 +5,8 @@
   "main": "(src/server.js)",
   "scripts": {
     "test": "export NODE_ENV=test && jasmine",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "server": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,10 @@
   "dependencies": {
     "dotenv": "^6.2.0",
     "ejs": "^2.6.1",
+    "eslint": "^5.13.0",
     "express": "^4.16.4",
     "jasmine": "^3.3.1",
+    "nodemon": "^1.18.9",
     "request": "^2.88.0"
   }
 }
