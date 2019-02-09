@@ -8,9 +8,9 @@
 
     <main class="container">
       <% include ../static/partials/messages.ejs %>
-      <h1>Sign up</h1>
+      <h1>Sign in</h1>
 
-      <form action="/users" method="post">
+      <form action="/users/sign_in" method="post">
         <div class="form-group">
           <label for="email">Email</label>
           <input
@@ -39,18 +39,7 @@
           >
         </div>
 
-        <div class="form-group">
-          <label for="passwordConfirmation">Password confirmation</label>
-          <input
-            type="password"
-            class="form-control"
-            name="passwordConfirmation"
-            aria-describedby="passwordHelp"
-            placeholder="Enter password confirmation"
-          />
-        </div>
-
-        <button type="submit" class="btn btn-primary">Sign up</button>
+        <button type="submit" class="btn btn-primary">Sign in</button>
       </form>
     </main>
 
