@@ -2,7 +2,7 @@ const Topic = require('./models').Topic;
 
 module.exports = {
   addTopic(newTopic, callback) {
-    console.log();
+    console.log(newTopic);
     return Topic.create({
       description: newTopic.description
     })

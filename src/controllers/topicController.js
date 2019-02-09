@@ -9,6 +9,7 @@ module.exports = {
     let newTopic = {
       description: req.body.description
     };
+    console.log(newTopic);
     topicQueries.addTopic(newTopic, (err, topic) => {
       if (err) {
         console.log(err);

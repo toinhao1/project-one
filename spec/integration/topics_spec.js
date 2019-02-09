@@ -25,18 +25,18 @@ describe('routes : topics', () => {
       });
     });
   });
-  describe('POST /topics', () => {
-    it('should create the topics selected', (done) => {
-      const options = {
-        url: base,
-        form: {
-          description: 'technology'
-        }
-      };
-
+  describe('POST /topics/create', () => {
+    const options = {
+      url: `${base}create`,
+      form: {
+        description: 'technology'
+      }
+    };
+    it('should create the topics selected and redirect', (done) => {
       request.post(options, (err, res, body) => {
         Topic.findOne({ where: { description: 'technology' } })
           .then((topic) => {
+            expect(res.statusCode).toBe(303);
             expect(topic).not.toBeNull();
             expect(topic.description).toBe('technology');
             done();

@@ -3,6 +3,6 @@ const router = express.Router();
 const topicController = require('../controllers/topicController');
 
 router.get('/topics/selection', topicController.topicsForm);
-router.post('/topics', topicController.create);
+router.post('/topics/create', topicController.create);
 
 module.exports = router;
