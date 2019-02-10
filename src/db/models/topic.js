@@ -3,9 +3,6 @@ module.exports = (sequelize, DataTypes) => {
   var Topic = sequelize.define(
     'Topic',
     {
-      source: {
-        type: DataTypes.STRING
-      },
       description: {
         type: DataTypes.STRING
       }
