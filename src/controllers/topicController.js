@@ -5,11 +5,10 @@ module.exports = {
     res.render('topics/selection');
   },
   create(req, res, next) {
-    console.log('hello');
     let newTopic = {
-      description: req.body.description
+      description: req.body.description.join(),
+      userId: req.user.id
     };
-    console.log(newTopic);
     topicQueries.addTopic(newTopic, (err, topic) => {
       if (err) {
         console.log(err);

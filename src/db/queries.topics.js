@@ -2,9 +2,9 @@ const Topic = require('./models').Topic;
 
 module.exports = {
   addTopic(newTopic, callback) {
-    console.log(newTopic);
     return Topic.create({
-      description: newTopic.description
+      description: newTopic.description,
+      userId: newTopic.userId
     })
       .then((topic) => {
         callback(null, topic);

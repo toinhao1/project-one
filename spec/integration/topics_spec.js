@@ -29,7 +29,8 @@ describe('routes : topics', () => {
     const options = {
       url: `${base}create`,
       form: {
-        description: 'technology'
+        description: 'technology',
+        userId: 1
       }
     };
     it('should create the topics selected and redirect', (done) => {
@@ -39,6 +40,7 @@ describe('routes : topics', () => {
             expect(res.statusCode).toBe(303);
             expect(topic).not.toBeNull();
             expect(topic.description).toBe('technology');
+            expect(topic.userId).toBe(1);
             done();
           })
           .catch((err) => {
