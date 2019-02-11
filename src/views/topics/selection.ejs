@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../static/partials/head.ejs %>
+  </head>
+  <body>
+    <% include ../static/partials/navbar.ejs %>
+
+    <main class="container">
+      <% include ../static/partials/messages.ejs %>
+      <h1>Topic Selection</h1>
+
+      <form action="/topics/create" method="post">
+        <small class="text-muted"
+          >Select the Topics you would like to see content related to.</small
+        >
+        <div class="checkbox">
+          <label for="description"
+            ><input type="checkbox" name="description" value="Science" />
+            Science</label
+          >
+        </div>
+        <div class="checkbox">
+          <label for="description"
+            ><input
+              type="checkbox"
+              name="description"
+              value="Technology"
+            />Technology</label
+          >
+        </div>
+        <div class="checkbox">
+          <label for="description"
+            ><input
+              type="checkbox"
+              name="description"
+              value="Environment"
+            />Environment</label
+          >
+        </div>
+        <div class="checkbox">
+          <label for="description"
+            ><input
+              type="checkbox"
+              name="description"
+              value="Economy"
+            />Economy</label
+          >
+        </div>
+        <div class="checkbox">
+          <label for="description"
+            ><input
+              type="checkbox"
+              name="description"
+              value="Travel"
+            />Travel</label
+          >
+        </div>
+        <div class="checkbox">
+          <label for="description"
+            ><input
+              type="checkbox"
+              name="description"
+              value="History"
+            />History</label
+          >
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </main>
+
+    <% include ../static/partials/baseScripts.ejs %>
+  </body>
+</html>

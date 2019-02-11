@@ -17,8 +17,8 @@ module.exports = {
         res.redirect('/users/sign_up');
       } else {
         passport.authenticate('local')(req, res, () => {
-          req.flash('notice', "You've successfully signed in!");
-          res.redirect('/');
+          req.flash('notice', "You've successfully signed up!");
+          res.redirect('/topics/selection');
         });
       }
     });

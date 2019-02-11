@@ -11,7 +11,7 @@
   "test": {
     "username": "AnthonySilveira",
     "password": null,
-    "database": "project-one",
+    "database": "project-one-test",
     "host": "127.0.0.1",
     "dialect": "postgres",
     "logging": false,

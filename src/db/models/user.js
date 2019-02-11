@@ -20,6 +20,10 @@ module.exports = (sequelize, DataTypes) => {
   );
   User.associate = function(models) {
     // associations can be defined here
+    User.hasOne(models.Topic, {
+      foreignKey: 'userId',
+      as: 'topics'
+    });
   };
   return User;
 };
