@@ -25,5 +25,12 @@ describe('routes : content', () => {
         done();
       });
     });
+    // it('should render a view with youtube videos', (done) => {
+    //   request.get(`${base}main`, (err, res, body) => {
+    //     expect(err).toBeNull();
+    //     // expect(res).toContain('Youtube player');
+    //     done();
+    //   });
+    // });
   });
 });

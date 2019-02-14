@@ -26,21 +26,19 @@ describe('routes : topics', () => {
     });
   });
   // describe('POST /topics/create', () => {
-  //   const options = {
-  //     url: `${base}create`,
-  //     form: {
-  //       description: 'technology',
-  //       userId: 1
-  //     }
-  //   };
   //   it('should create the topics selected and redirect', (done) => {
+  //     const options = {
+  //       url: `${base}create`,
+  //       form: {
+  //         description: ['technology']
+  //       }
+  //     };
   //     request.post(options, (err, res, body) => {
   //       Topic.findOne({ where: { description: 'technology' } })
   //         .then((topic) => {
-  //           expect(res.statusCode).toBe(303);
+  //           console.log(topic);
   //           expect(topic).not.toBeNull();
   //           expect(topic.description).toBe('technology');
-  //           expect(topic.userId).toBe(1);
   //           done();
   //         })
   //         .catch((err) => {

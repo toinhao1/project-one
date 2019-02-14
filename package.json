@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/toinhao1/project-one#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",
@@ -29,6 +30,7 @@
     "express-session": "^1.15.6",
     "express-validator": "^5.3.1",
     "jasmine": "^3.3.1",
+    "newsapi": "^2.4.0",
     "nodemon": "^1.18.9",
     "npm": "^6.7.0",
     "passport": "^0.4.0",
