@@ -12,5 +12,9 @@ module.exports = {
       .catch((err) => {
         callback(err);
       });
+  },
+
+  getTopicForUser(userId) {
+    return Topic.findOne({ where: { userId }})
   }
 };

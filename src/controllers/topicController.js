@@ -14,7 +14,8 @@ module.exports = {
         console.log(err);
         res.redirect(500, 'topics/selection');
       } else {
-        res.redirect(303, '/');
+        req.flash('notice', "You've successfully selected your topics!");
+        res.redirect('/content/main');
       }
     });
   }
