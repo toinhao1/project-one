@@ -15,6 +15,6 @@ module.exports = {
   },
 
   getTopicForUser(userId) {
-    return Topic.findOne({ where: { userId }})
+    return Topic.findOne({ where: { userId } });
   }
 };
